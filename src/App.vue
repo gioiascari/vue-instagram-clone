@@ -1,24 +1,27 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark>
+    <v-app-bar flat app clipped-right color="white" clipped>
       <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
+        <!-- Barra di ricerca -->
+        <v-card color="grey lighten-4" outlined width="300px" class="pa-2 ml-4">
+          <v-layout>
+            <v-flex>
+              <v-icon color="grey">mdi-magnify</v-icon>
+            </v-flex>
+            <v-flex class="text-right">
+              <v-icon color="grey">mdi-microphone-outline </v-icon>
+            </v-flex>
+          </v-layout>
+        </v-card>
+        <!-- /Barra di ricerca -->
+        <v-spacer></v-spacer>
+        <!-- Crea un nuovo post -->
+        <v-btn depressed color="#E7596F" class="text-none mr-5">
+          <span class="mr-2">
+            <v-icon class="mr-2">mdi-plus</v-icon>Create New Post
+          </span>
+        </v-btn>
+        <!-- /Crea un nuovo post -->
       </div>
 
       <v-spacer></v-spacer>
