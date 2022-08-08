@@ -1,9 +1,16 @@
 <template>
-  <v-container class="pa-10"> </v-container>
+  <v-container class="pa-10">
+    <stories-section></stories-section>
+  </v-container>
 </template>
 
 <script>
-export default {};
+import StoriesSection from "../components/StoriesSection.vue";
+export default {
+  components: {
+    StoriesSection,
+  },
+};
 </script>
 
 <style></style>
