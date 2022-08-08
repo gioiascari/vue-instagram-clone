@@ -13,59 +13,57 @@
             </v-flex>
           </v-layout>
         </v-card>
-        <!-- /Barra di ricerca -->
-        <v-spacer></v-spacer>
-        <!-- Crea un nuovo post -->
-        <v-btn depressed color="#E7596F" class="text-none mr-5">
-          <span class="mr-2">
-            <v-icon class="mr-2">mdi-plus</v-icon>Create New Post
-          </span>
-        </v-btn>
-        <!-- Icons -->
-        <v-btn icon class="mr-2">
-          <v-icon>mdi-email-outline</v-icon>
-        </v-btn>
-        <v-btn icon class="mr-2">
-          <v-icon>mdi-heart-outline</v-icon>
-        </v-btn>
-        <!-- /Icons -->
-        <v-avatar size="40">
-          <img lazy-src="img/me.jpg" src="img/me.jpg" alt="Gioia" />
-        </v-avatar>
-
-        <!-- /Crea un nuovo post -->
       </div>
-
+      <!-- /Barra di ricerca -->
       <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
+      <!-- Crea un nuovo post -->
+      <v-btn depressed color="#E7596F" class="text-none mr-5">
+        <span class="mr-2">
+          <v-icon class="mr-2">mdi-plus</v-icon>Create New Post
+        </span>
       </v-btn>
+      <!-- /Crea un nuovo post -->
+      <!-- Icons -->
+      <v-btn icon class="mr-2">
+        <v-icon>mdi-email-outline</v-icon>
+      </v-btn>
+      <v-btn icon class="mr-2">
+        <v-icon>mdi-heart-outline</v-icon>
+      </v-btn>
+      <!-- /Icons -->
+      <!-- Avatar -->
+      <v-avatar size="40">
+        <img lazy-src="img/me.jpg" src="img/me.jpg" alt="Gioia" />
+      </v-avatar>
+      <v-icon>mdi-menu-down</v-icon>
+      <!--/ Avatar -->
     </v-app-bar>
-
-    <v-main>
-      <HelloWorld />
-    </v-main>
+    <main-nav />
+    <profile-right-nav />
+    <v-content>
+      <ProfileRightNav />
+    </v-content>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
+import ProfileRightNav from "./components/ProfileRightNav";
 
 export default {
   name: "App",
 
   components: {
-    HelloWorld,
+    ProfileRightNav,
   },
 
   data: () => ({
-    //
+    drawer: true,
+    group: null,
   }),
+  watch: {
+    group() {
+      this.drawer = false;
+    },
+  },
 };
 </script>
