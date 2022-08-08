@@ -21,6 +21,18 @@
             <v-icon class="mr-2">mdi-plus</v-icon>Create New Post
           </span>
         </v-btn>
+        <!-- Icons -->
+        <v-btn icon class="mr-2">
+          <v-icon>mdi-email-outline</v-icon>
+        </v-btn>
+        <v-btn icon class="mr-2">
+          <v-icon>mdi-heart-outline</v-icon>
+        </v-btn>
+        <!-- /Icons -->
+        <v-avatar size="40">
+          <img lazy-src="img/me.jpg" src="img/me.jpg" alt="Gioia" />
+        </v-avatar>
+
         <!-- /Crea un nuovo post -->
       </div>
 
