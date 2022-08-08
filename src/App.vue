@@ -39,8 +39,8 @@
       <!--/ Avatar -->
     </v-app-bar>
     <main-nav />
-    <profile-right-nav />
     <v-content>
+      <MainNav />
       <ProfileRightNav />
     </v-content>
   </v-app>
@@ -48,11 +48,13 @@
 
 <script>
 import ProfileRightNav from "./components/ProfileRightNav";
+import MainNav from "./components/MainNav";
 
 export default {
   name: "App",
 
   components: {
+    MainNav,
     ProfileRightNav,
   },
 

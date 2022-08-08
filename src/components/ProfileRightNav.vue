@@ -34,19 +34,19 @@
         </v-layout>
       </v-flex>
     </v-layout>
-    <v-layout class="mt-4 subtitle-2 grey--text">
+    <v-layout class="mt-3 subtitle-2 grey--text">
       I'm a full-stack developer based in Venice, Italy, always interested in
       learning about new Technologies and projects!
       <br />
       <br />
     </v-layout>
-    <v-layout class="mt-5">
+    <v-layout class="">
       <v-flex>
         <div class="subtitle-2">Locations</div>
         <div class="subtitle-2 grey--text">Based in Venice, Italy</div>
       </v-flex>
     </v-layout>
-    <v-layout class="mt-5">
+    <v-layout class="my-5">
       <v-flex>
         <div class="subtitle-2">Profession</div>
         <div class="subtitle-2 grey--text">Developer</div>
