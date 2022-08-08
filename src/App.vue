@@ -38,10 +38,10 @@
       <v-icon>mdi-menu-down</v-icon>
       <!--/ Avatar -->
     </v-app-bar>
-    <main-nav />
+    <MainNav />
+    <ProfileRightNav />
     <v-content>
-      <MainNav />
-      <ProfileRightNav />
+      <ProfilePage />
     </v-content>
   </v-app>
 </template>
@@ -49,11 +49,13 @@
 <script>
 import ProfileRightNav from "./components/ProfileRightNav";
 import MainNav from "./components/MainNav";
+import ProfilePage from "./pages/ProfilePage";
 
 export default {
   name: "App",
 
   components: {
+    ProfilePage,
     MainNav,
     ProfileRightNav,
   },
